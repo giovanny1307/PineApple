@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2CA22CF71C127ACF006552B8 /* ModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CA22CF51C127ACF006552B8 /* ModelData.xcdatamodeld */; };
-		2CCCDB121C113BB100EAEC71 /* PineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCDB111C113BB100EAEC71 /* PineData.swift */; };
 		2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */; };
 		2CFEDCA11C0E68ED00CAB35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */; };
 		2CFEDCA31C0E68ED00CAB35C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA21C0E68ED00CAB35C /* ViewController.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		2CA22CF61C127ACF006552B8 /* ModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelData.xcdatamodel; sourceTree = "<group>"; };
-		2CCCDB111C113BB100EAEC71 /* PineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PineData.swift; path = ../PineData.swift; sourceTree = "<group>"; };
 		2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2CFEDC9D1C0E68ED00CAB35C /* HeadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 		2CFEDC9F1C0E68ED00CAB35C /* HeadApp */ = {
 			isa = PBXGroup;
 			children = (
-				2CCCDB111C113BB100EAEC71 /* PineData.swift */,
 				2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */,
 				2CA22CF51C127ACF006552B8 /* ModelData.xcdatamodeld */,
 				2CFEDCA21C0E68ED00CAB35C /* ViewController.swift */,
@@ -266,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA22CF71C127ACF006552B8 /* ModelData.xcdatamodeld in Sources */,
-				2CCCDB121C113BB100EAEC71 /* PineData.swift in Sources */,
 				2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */,
 				2CFEDCA31C0E68ED00CAB35C /* ViewController.swift in Sources */,
 				2CFEDCA11C0E68ED00CAB35C /* AppDelegate.swift in Sources */,

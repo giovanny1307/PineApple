@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import Foundation
 
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, TableViewCellDelegate {
@@ -24,9 +24,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	var texto = String()
 	
 
-
-
-	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -50,6 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		tableViewPine.backgroundColor = UIColor.blackColor()
 		tableViewPine.rowHeight = 50.0
 		
+		Notify(randomMensaje())
 				
 	}
 	
@@ -94,6 +92,42 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		
 		inputUsuario.text = ""
 	
+	}
+	
+	func randomMensaje() ->String {
+		
+		//1
+  let appDelegate =
+  UIApplication.sharedApplication().delegate as! AppDelegate
+		
+  let managedContext = appDelegate.managedObjectContext
+		
+  //2
+  let fetchRequest = NSFetchRequest(entityName: "Person")
+		
+  //3
+  do {
+	let results =
+	try managedContext.executeFetchRequest(fetchRequest)
+	CoreDatos = results as! [NSManagedObject]
+} catch let error as NSError {
+	print("Could not fetch \(error), \(error.userInfo)")
+  }
+		
+		print(CoreDatos.count)
+		
+		if CoreDatos.count>0 {
+			
+			var arrayCount = UInt32(CoreDatos.count)
+			var randomNumber = arc4random_uniform(arrayCount)
+			var numeroMsj =  Int(randomNumber)
+			var mensaje = CoreDatos[numeroMsj].valueForKey("name") as? String
+			
+			return mensaje!}else{
+			
+			return "Escribe un goal"
+			
+		}
 	}
 	
 	//MARK: TextField delegados
@@ -254,6 +288,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	print("Could not save \(error), \(error.userInfo)")
   }
 	}
+	
+	
+	//MARK Notificacion
+	
+	
+	func Notify(mensaje: String){
+		
+		
+		let calendar = NSCalendar.currentCalendar()
+		let calendarComponents = NSDateComponents()
+		calendarComponents.hour = 17
+		calendarComponents.second = 0
+		calendarComponents.minute = 03
+		calendar.timeZone = NSTimeZone.defaultTimeZone()
+	
+		let date = calendar.dateFromComponents(calendarComponents)
+		
+		
+		
+		let notificacion = UILocalNotification()
+		notificacion.alertTitle = "hola"
+		notificacion.alertBody = mensaje
+		notificacion.fireDate = NSDate(timeIntervalSinceNow: 30)
+		notificacion.soundName = UILocalNotificationDefaultSoundName
+		notificacion.repeatInterval = NSCalendarUnit.Day
+		
+	
+	
+		UIApplication.sharedApplication().scheduleLocalNotification(notificacion)
+		
+	
+	
+	}
+	
+	
 	
 	
 
