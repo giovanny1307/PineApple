@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C6AFC491C1A348A008DCBBE /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AFC481C1A348A008DCBBE /* Notify.swift */; };
 		2CA22CF71C127ACF006552B8 /* ModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CA22CF51C127ACF006552B8 /* ModelData.xcdatamodeld */; };
 		2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */; };
 		2CFEDCA11C0E68ED00CAB35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C6AFC481C1A348A008DCBBE /* Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
 		2CA22CF61C127ACF006552B8 /* ModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelData.xcdatamodel; sourceTree = "<group>"; };
 		2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2CFEDC9D1C0E68ED00CAB35C /* HeadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				2CFEDCA91C0E68ED00CAB35C /* LaunchScreen.storyboard */,
 				2CFEDCAC1C0E68ED00CAB35C /* Info.plist */,
 				2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */,
+				2C6AFC481C1A348A008DCBBE /* Notify.swift */,
 			);
 			path = HeadApp;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */,
 				2CFEDCA31C0E68ED00CAB35C /* ViewController.swift in Sources */,
 				2CFEDCA11C0E68ED00CAB35C /* AppDelegate.swift in Sources */,
+				2C6AFC491C1A348A008DCBBE /* Notify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

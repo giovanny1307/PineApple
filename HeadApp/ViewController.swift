@@ -22,12 +22,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 	var CoreDatos = [NSManagedObject]()
 	var texto = String()
+	var i = 0
 	
-
+	
+	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		var app: UIApplication = UIApplication.sharedApplication()
+		var eventArray: [UILocalNotification] = app.scheduledLocalNotifications!
+		print("PRUEBA INICIAL   \(eventArray.count)!!!!!!!!!!!!!!!!!!!!!!")
 		
 		if CoreDatos.count>0{return}
 		
@@ -47,8 +52,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		tableViewPine.backgroundColor = UIColor.blackColor()
 		tableViewPine.rowHeight = 50.0
 		
-		Notify(randomMensaje())
-				
+		
 	}
 	
 	override func viewWillAppear(animated: Bool) {
@@ -77,6 +81,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 	@IBAction func sendButtonTab(sender: UIButton) {
 		
+		var dias = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,
+			32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61
+			,62,63,64]
+		
+		var app: UIApplication = UIApplication.sharedApplication()
+		var eventArray: [UILocalNotification] = app.scheduledLocalNotifications!
+		i = CoreDatos.count
 		//BajarTeclado
 		
 		self.inputUsuario.endEditing(true)
@@ -85,50 +96,42 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		
 		saveMessage(inputUsuario.text!)
 		tableViewPine.reloadData()
+		 i++
 		
-		print(CoreDatos.count)
+		print("Contador send button = \(i)")
 		
+		//Activar notificaciones
+			app.cancelAllLocalNotifications()
+			
+			while dias.count>0 {
+				
+				var arrayCount = UInt32(dias.count)
+				var randomNumber = arc4random_uniform(arrayCount)
+				var numeroMsj =  Int(randomNumber)
+				var a = dias.removeAtIndex(numeroMsj)
+				var arrayCount2 = UInt32(CoreDatos.count)
+				var randomNumber2 = arc4random_uniform(arrayCount2)
+				var numeroMsj2 =  Int(randomNumber2)
+				var mensaje = CoreDatos[numeroMsj2].valueForKey("name") as? String
+				
+				Notify.pine(mensaje!, contador: a)
+			}
+
+		print("notificaciones programadas piñe test : \(eventArray.count)")
+
 		//Borrar teclado
 		
 		inputUsuario.text = ""
-	
-	}
-	
-	func randomMensaje() ->String {
 		
-		//1
-  let appDelegate =
-  UIApplication.sharedApplication().delegate as! AppDelegate
+		// Reiniciar contador
 		
-  let managedContext = appDelegate.managedObjectContext
-		
-  //2
-  let fetchRequest = NSFetchRequest(entityName: "Person")
-		
-  //3
-  do {
-	let results =
-	try managedContext.executeFetchRequest(fetchRequest)
-	CoreDatos = results as! [NSManagedObject]
-} catch let error as NSError {
-	print("Could not fetch \(error), \(error.userInfo)")
-  }
-		
-		print(CoreDatos.count)
-		
-		if CoreDatos.count>0 {
-			
-			var arrayCount = UInt32(CoreDatos.count)
-			var randomNumber = arc4random_uniform(arrayCount)
-			var numeroMsj =  Int(randomNumber)
-			var mensaje = CoreDatos[numeroMsj].valueForKey("name") as? String
-			
-			return mensaje!}else{
-			
-			return "Escribe un goal"
-			
+		if(CoreDatos.count == 0){
+			i = 0
 		}
+	
 	}
+	
+	
 	
 	//MARK: TextField delegados
 	
@@ -161,6 +164,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 	
 	func toDoItemDeleted(todoItem: NSManagedObject) {
+		
+		var app: UIApplication = UIApplication.sharedApplication()
+		var eventArray: [UILocalNotification] = app.scheduledLocalNotifications!
+		i = CoreDatos.count
+		i--
+		print("Contador delete method = \(i)")
+
 		let index = (CoreDatos as NSArray).indexOfObject(todoItem)
 		if index == NSNotFound { return }
 		
@@ -179,6 +189,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 			print(error)
 		}
 		
+		if(CoreDatos.count == 0){
+			i = 0
+		}
+		
+		if (i == 0){
+		
+			app.cancelAllLocalNotifications()
+			print("notificaciones programadas piñe test 3 : \(eventArray.count)")
+
+	
+		}
 		
 	
 	
@@ -216,6 +237,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   let indexPathForRow = NSIndexPath(forRow: index, inSection: 0)
   tableViewPine.deleteRowsAtIndexPaths([indexPathForRow], withRowAnimation: .Fade)
   tableViewPine.endUpdates()
+		
+		if(i==0){
+		
+			
+		}
 	}
 	
 	
@@ -270,11 +296,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   let managedContext = appDelegate.managedObjectContext
 		
   //2
-  let entity =  NSEntityDescription.entityForName("Person",
-	inManagedObjectContext:managedContext)
+  let entity =  NSEntityDescription.entityForName("Person",inManagedObjectContext:managedContext)
 		
-  let person = NSManagedObject(entity: entity!,
-	insertIntoManagedObjectContext: managedContext)
+  let person = NSManagedObject(entity: entity!,insertIntoManagedObjectContext: managedContext)
 		
   //3
   person.setValue(name, forKey: "name")
@@ -283,50 +307,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   do {
 	try managedContext.save()
 	//5
-	CoreDatos.append(person)
+	CoreDatos.insert(person,atIndex: 0)
 } catch let error as NSError  {
 	print("Could not save \(error), \(error.userInfo)")
   }
 	}
 	
 	
-	//MARK Notificacion
-	
-	
-	func Notify(mensaje: String){
-		
-		
-		let calendar = NSCalendar.currentCalendar()
-		let calendarComponents = NSDateComponents()
-		calendarComponents.hour = 17
-		calendarComponents.second = 0
-		calendarComponents.minute = 03
-		calendar.timeZone = NSTimeZone.defaultTimeZone()
-	
-		let date = calendar.dateFromComponents(calendarComponents)
-		
-		
-		
-		let notificacion = UILocalNotification()
-		notificacion.alertTitle = "hola"
-		notificacion.alertBody = mensaje
-		notificacion.fireDate = NSDate(timeIntervalSinceNow: 30)
-		notificacion.soundName = UILocalNotificationDefaultSoundName
-		notificacion.repeatInterval = NSCalendarUnit.Day
-		
-	
-	
-		UIApplication.sharedApplication().scheduleLocalNotification(notificacion)
-		
-	
-	
-	}
-	
-	
-	
-	
 
-
-
+	
+	
+	
 }
+
+	
+	
+
+
 
