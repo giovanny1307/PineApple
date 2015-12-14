@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		2C6AFC491C1A348A008DCBBE /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AFC481C1A348A008DCBBE /* Notify.swift */; };
 		2CA22CF71C127ACF006552B8 /* ModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CA22CF51C127ACF006552B8 /* ModelData.xcdatamodeld */; };
+		2CBD53251C1E5E9F0032C0BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD53271C1E5E9F0032C0BC /* Main.storyboard */; };
+		2CBD532D1C1E64AA0032C0BC /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD532C1C1E64AA0032C0BC /* Amatic-Bold.ttf */; };
+		2CBD532F1C1E64C50032C0BC /* BEBAS___.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD532E1C1E64C50032C0BC /* BEBAS___.ttf */; };
+		2CBD53311C1E64D80032C0BC /* Capture_it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD53301C1E64D80032C0BC /* Capture_it.ttf */; };
+		2CBD53331C1E64F20032C0BC /* Lobster_1.3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD53321C1E64F20032C0BC /* Lobster_1.3.otf */; };
+		2CBD53371C1E65400032C0BC /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD53361C1E65400032C0BC /* Starjedi.ttf */; };
+		2CBD53391C1E65520032C0BC /* underwood_champion.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD53381C1E65520032C0BC /* underwood_champion.ttf */; };
+		2CBD533B1C1E76830032C0BC /* Letras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD533A1C1E76830032C0BC /* Letras.swift */; };
 		2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */; };
+		2CE5BE431C1F64CB00CDE74C /* Ajustes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5BE421C1F64CB00CDE74C /* Ajustes.swift */; };
+		2CE5BE451C1F65A200CDE74C /* Colores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5BE441C1F65A200CDE74C /* Colores.swift */; };
 		2CFEDCA11C0E68ED00CAB35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */; };
 		2CFEDCA31C0E68ED00CAB35C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA21C0E68ED00CAB35C /* ViewController.swift */; };
-		2CFEDCA61C0E68ED00CAB35C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA41C0E68ED00CAB35C /* Main.storyboard */; };
 		2CFEDCA81C0E68ED00CAB35C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA71C0E68ED00CAB35C /* Assets.xcassets */; };
-		2CFEDCAB1C0E68ED00CAB35C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA91C0E68ED00CAB35C /* LaunchScreen.storyboard */; };
 		2CFEDCB61C0E68ED00CAB35C /* HeadAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCB51C0E68ED00CAB35C /* HeadAppTests.swift */; };
 		2CFEDCC11C0E68EE00CAB35C /* HeadAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCC01C0E68EE00CAB35C /* HeadAppUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,13 +47,23 @@
 /* Begin PBXFileReference section */
 		2C6AFC481C1A348A008DCBBE /* Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
 		2CA22CF61C127ACF006552B8 /* ModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelData.xcdatamodel; sourceTree = "<group>"; };
+		2CBD53281C1E5EB50032C0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CBD53291C1E5ED00032C0BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		2CBD532B1C1E5EEC0032C0BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2CBD532C1C1E64AA0032C0BC /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Amatic-Bold.ttf"; path = "../../../../../Downloads/Fuentes/amatic/Amatic-Bold.ttf"; sourceTree = "<group>"; };
+		2CBD532E1C1E64C50032C0BC /* BEBAS___.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BEBAS___.ttf"; path = "../../../../../Downloads/Fuentes/Bebas/BEBAS___.ttf"; sourceTree = "<group>"; };
+		2CBD53301C1E64D80032C0BC /* Capture_it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Capture_it.ttf; path = "../../../../../Downloads/Fuentes/Capture-it/Capture_it.ttf"; sourceTree = "<group>"; };
+		2CBD53321C1E64F20032C0BC /* Lobster_1.3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Lobster_1.3.otf; path = ../../../../../Downloads/Fuentes/Lobster/Lobster_1.3.otf; sourceTree = "<group>"; };
+		2CBD53361C1E65400032C0BC /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Starjedi.ttf; path = ../../../../../Downloads/star_jedi/starjedi/Starjedi.ttf; sourceTree = "<group>"; };
+		2CBD53381C1E65520032C0BC /* underwood_champion.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = underwood_champion.ttf; path = "../../../../../Downloads/Fuentes/Underwood-Champion/underwood_champion.ttf"; sourceTree = "<group>"; };
+		2CBD533A1C1E76830032C0BC /* Letras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letras.swift; sourceTree = "<group>"; };
 		2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2CE5BE421C1F64CB00CDE74C /* Ajustes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ajustes.swift; sourceTree = "<group>"; };
+		2CE5BE441C1F65A200CDE74C /* Colores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colores.swift; sourceTree = "<group>"; };
 		2CFEDC9D1C0E68ED00CAB35C /* HeadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CFEDCA21C0E68ED00CAB35C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2CFEDCA51C0E68ED00CAB35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CFEDCA71C0E68ED00CAB35C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2CFEDCAA1C0E68ED00CAB35C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CFEDCAC1C0E68ED00CAB35C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFEDCB11C0E68ED00CAB35C /* HeadAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFEDCB51C0E68ED00CAB35C /* HeadAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadAppTests.swift; sourceTree = "<group>"; };
@@ -106,9 +124,17 @@
 				2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */,
 				2CA22CF51C127ACF006552B8 /* ModelData.xcdatamodeld */,
 				2CFEDCA21C0E68ED00CAB35C /* ViewController.swift */,
-				2CFEDCA41C0E68ED00CAB35C /* Main.storyboard */,
+				2CBD532C1C1E64AA0032C0BC /* Amatic-Bold.ttf */,
+				2CBD532E1C1E64C50032C0BC /* BEBAS___.ttf */,
+				2CBD53301C1E64D80032C0BC /* Capture_it.ttf */,
+				2CBD53361C1E65400032C0BC /* Starjedi.ttf */,
+				2CBD53381C1E65520032C0BC /* underwood_champion.ttf */,
+				2CBD53321C1E64F20032C0BC /* Lobster_1.3.otf */,
+				2CBD53271C1E5E9F0032C0BC /* Main.storyboard */,
+				2CBD533A1C1E76830032C0BC /* Letras.swift */,
+				2CE5BE421C1F64CB00CDE74C /* Ajustes.swift */,
+				2CE5BE441C1F65A200CDE74C /* Colores.swift */,
 				2CFEDCA71C0E68ED00CAB35C /* Assets.xcassets */,
-				2CFEDCA91C0E68ED00CAB35C /* LaunchScreen.storyboard */,
 				2CFEDCAC1C0E68ED00CAB35C /* Info.plist */,
 				2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */,
 				2C6AFC481C1A348A008DCBBE /* Notify.swift */,
@@ -196,6 +222,9 @@
 		2CFEDC951C0E68ED00CAB35C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					hola,
+				);
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Giovanny Piñeros";
@@ -219,6 +248,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
+				"es-MX",
 				Base,
 			);
 			mainGroup = 2CFEDC941C0E68ED00CAB35C;
@@ -238,9 +269,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFEDCAB1C0E68ED00CAB35C /* LaunchScreen.storyboard in Resources */,
+				2CBD53251C1E5E9F0032C0BC /* Main.storyboard in Resources */,
 				2CFEDCA81C0E68ED00CAB35C /* Assets.xcassets in Resources */,
-				2CFEDCA61C0E68ED00CAB35C /* Main.storyboard in Resources */,
+				2CBD53331C1E64F20032C0BC /* Lobster_1.3.otf in Resources */,
+				2CBD532F1C1E64C50032C0BC /* BEBAS___.ttf in Resources */,
+				2CBD532D1C1E64AA0032C0BC /* Amatic-Bold.ttf in Resources */,
+				2CBD53371C1E65400032C0BC /* Starjedi.ttf in Resources */,
+				2CBD53311C1E64D80032C0BC /* Capture_it.ttf in Resources */,
+				2CBD53391C1E65520032C0BC /* underwood_champion.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA22CF71C127ACF006552B8 /* ModelData.xcdatamodeld in Sources */,
+				2CE5BE451C1F65A200CDE74C /* Colores.swift in Sources */,
+				2CBD533B1C1E76830032C0BC /* Letras.swift in Sources */,
 				2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */,
 				2CFEDCA31C0E68ED00CAB35C /* ViewController.swift in Sources */,
+				2CE5BE431C1F64CB00CDE74C /* Ajustes.swift in Sources */,
 				2CFEDCA11C0E68ED00CAB35C /* AppDelegate.swift in Sources */,
 				2C6AFC491C1A348A008DCBBE /* Notify.swift in Sources */,
 			);
@@ -305,20 +344,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2CFEDCA41C0E68ED00CAB35C /* Main.storyboard */ = {
+		2CBD53271C1E5E9F0032C0BC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2CFEDCA51C0E68ED00CAB35C /* Base */,
+				2CBD53281C1E5EB50032C0BC /* Base */,
+				2CBD53291C1E5ED00032C0BC /* es */,
+				2CBD532B1C1E5EEC0032C0BC /* en */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2CFEDCA91C0E68ED00CAB35C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CFEDCAA1C0E68ED00CAB35C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			path = ../../../../../.Trash;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HeadApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadApp;
@@ -420,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HeadApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadApp;

@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Amatic-Bold.ttf</string>
+		<string>BEBAS__.ttf</string>
+		<string>Capture_it.ttf</string>
+		<string>Starjedi.ttf</string>
+		<string>underwood_champion.ttf</string>
+		<string>Lobster_1.3.otf</string>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

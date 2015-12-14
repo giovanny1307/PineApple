@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  HeadApp
+
+  Created by Giovanny Piñeros on 12/13/15.
+  Copyright © 2015 Giovanny Piñeros. All rights reserved.
+*/
+
+HeadAppColor = "HeadApp Color"
+Blue = "Blue"
+Red = "Red"
+Green = "Green"
+Pink = "Pink"
+Violet = "Violet"
+Gray = "Gray"

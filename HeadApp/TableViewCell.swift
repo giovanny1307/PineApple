@@ -78,7 +78,7 @@ class TableViewCell: UITableViewCell {
 			delegate!.toDoItemDeleted(toDoItem!)
 		}
 	} else {
-		UIView.animateWithDuration(0.2, animations: {self.frame = originalFrame})
+		UIView.animateWithDuration(0.1, animations: {self.frame = originalFrame})
 	}
 		}
 	
@@ -95,6 +95,7 @@ class TableViewCell: UITableViewCell {
 		}
 		return false
 	}
+	
 
 
 }

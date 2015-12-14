@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D1k-0b-jJW"; */
+"D1k-0b-jJW.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D8E-eD-oT5"; */
+"D8E-eD-oT5.text" = "Label";
+
+/* Class = "UITableViewSection"; footerTitle = "Set your favorite color and font"; ObjectID = "FcD-ZS-nwM"; */
+"FcD-ZS-nwM.footerTitle" = "Set your favorite color and font";
+
+/* Class = "UITableViewSection"; headerTitle = "Color and Font"; ObjectID = "FcD-ZS-nwM"; */
+"FcD-ZS-nwM.headerTitle" = "Color and Font";
+
+/* Class = "UITableViewSection"; headerTitle = "Section-1"; ObjectID = "Hxe-9o-esX"; */
+"Hxe-9o-esX.headerTitle" = "Section-1";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "IWU-t4-0c2"; */
+"IWU-t4-0c2.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Fuente"; ObjectID = "IqT-ac-8Qx"; */
+"IqT-ac-8Qx.text" = "Fuente";
+
+/* Class = "UITableViewSection"; footerTitle = "Set your name"; ObjectID = "JGW-Oj-fnp"; */
+"JGW-Oj-fnp.footerTitle" = "Set your name";
+
+/* Class = "UITableViewSection"; headerTitle = "Your Name"; ObjectID = "JGW-Oj-fnp"; */
+"JGW-Oj-fnp.headerTitle" = "Your Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TKX-Qz-LD9"; */
+"TKX-Qz-LD9.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YHH-sf-TXx"; */
+"YHH-sf-TXx.text" = "Label";
+
+/* Class = "UITextField"; text = "Coloca tu nombre"; ObjectID = "fPl-Xk-vl9"; */
+"fPl-Xk-vl9.text" = "Coloca tu nombre";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ifh-Pz-nMm"; */
+"ifh-Pz-nMm.text" = "Label";
+
+/* Class = "UILabel"; text = "Color"; ObjectID = "jsw-5u-4FV"; */
+"jsw-5u-4FV.text" = "Color";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "so5-Ed-e5V"; */
+"so5-Ed-e5V.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "wgv-us-76K"; */
+"wgv-us-76K.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xgL-hi-Pnd"; */
+"xgL-hi-Pnd.text" = "Label";
