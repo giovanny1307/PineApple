@@ -62,7 +62,7 @@ class Ajustes: UITableViewController,UITextFieldDelegate {
 		
 		Name.placeholder = ud.stringForKey("Nombre")!
 		
-		print(Name.placeholder!)
+		print("EL NOMBRE ES:\(Name.placeholder!)!!!!!!!!!!!!!!!!!!!!!")
 		
 
 		

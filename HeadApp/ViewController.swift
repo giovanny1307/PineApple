@@ -9,13 +9,40 @@
 import UIKit
 import CoreData
 import Foundation
+import QuartzCore
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, TableViewCellDelegate, UINavigationControllerDelegate,UITextViewDelegate {
+
+
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,TableViewCellDelegate, UINavigationControllerDelegate,UITextViewDelegate {
 
 
 	@IBOutlet weak var tableViewPine: UITableView!
-	@IBOutlet weak var inputUsuario: UITextField!
+	
+	@IBOutlet weak var alturaText: NSLayoutConstraint!
+	
+	
+	
+
+	@IBAction func Share(sender: UIButton) {
+		
+		let textToShare = "HeadApp is awesome!"
+		
+		
+			let objectsToShare = [textToShare]
+			let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+			
+			//New Excluded Activities Code
+			//activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+			//
+			
+			self.presentViewController(activityVC, animated: true, completion: nil)
+		
+	}
+
+	@IBOutlet weak var inputUsuario: UITextView!
+	
 	@IBOutlet weak var sendButton: UIButton!
 	@IBOutlet weak var hightInputLayout: NSLayoutConstraint!
 	
@@ -41,6 +68,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		//listener para el texfield es decir un delegate, para reconocer cuando el usuario hizo tap en el 
 		
 		self.inputUsuario.delegate = self
+		self.inputUsuario.layer.cornerRadius = 5
+		
+		self.inputUsuario.scrollEnabled =  false
+		
 		
 		//Color y estilo de la tableView
 		
@@ -50,7 +81,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		
 		tableViewPine.separatorStyle = .None
 		tableViewPine.backgroundColor = UIColor(red:0.85, green:0.88, blue:0.90, alpha:1.0)
-		//tableViewPine.rowHeight = 200
+	
 		self.tableViewPine.reloadData()
 		navigationController?.navigationBar.barTintColor = UIColor(red:0.18, green:0.33, blue:0.51, alpha:1.0)
 		
@@ -133,29 +164,62 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 	//MARK: TextField delegados
 	
-	func textFieldDidBeginEditing(textField: UITextField) {
-		
+	func textViewDidBeginEditing(textView: UITextView) {
 		self.view.layoutIfNeeded()
+		
+		
+	
+		
 		UIView.animateWithDuration(0.5, animations: {
 			
-			self.hightInputLayout.constant = 340
+			self.hightInputLayout.constant = 315
+			
+			
 			self.view.layoutIfNeeded()
 			
 			
 			}, completion: nil)
-		
 	}
 	
-	func textFieldDidEndEditing(textField: UITextField) {
+	func textViewDidEndEditing(textView: UITextView) {
+		
 		self.view.layoutIfNeeded()
 		UIView.animateWithDuration(0.5, animations: {
 			
-			self.hightInputLayout.constant = 70
+			self.hightInputLayout.constant = 44
+			self.alturaText.constant = 30
+	
+			
 			self.view.layoutIfNeeded()
 			
 			
 			}, completion: nil)
+		
+
 	}
+	
+	
+	func textViewDidChange(textView: UITextView) {
+		
+		var alturaDinamica = inputUsuario.sizeThatFits(CGSizeMake(inputUsuario.frame.size.width ,  100))
+		
+				hightInputLayout.constant = 315 + alturaDinamica.height - 35
+				alturaText.constant = alturaDinamica.height
+		        self.view.layoutIfNeeded()
+
+	}
+	
+	func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+		let currentCharacterCount = textView.text?.characters.count ?? 0
+		if (range.length + range.location > currentCharacterCount){
+			return false
+		}
+		let newLength = currentCharacterCount + text.characters.count - range.length
+		return newLength <= 64
+	}
+	
+	
+	
 	
 	//MARK: delegados celdas
 	
@@ -255,7 +319,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		cell.textLabel?.lineBreakMode = .ByWordWrapping
 		cell.textLabel?.numberOfLines = 0
 		cell.textLabel!.text = mensaje.valueForKey("name") as? String
-		cell.textLabel?.font = tipoletra()
+		cell.textLabel!.font = tipoletra()
 		cell.textLabel?.textColor = UIColor.whiteColor()
 		cell.textLabel?.backgroundColor = UIColor.clearColor()
 
@@ -341,7 +405,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		,62,63,64]
 		
 		if (CoreDatos.count>=1){
-	
+	 
 		cancelNotifications()
 		
 		while dias.count>0 {
@@ -375,7 +439,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 	//MARK: fuentes
 	
-	func tipoletra()->UIFont{
+	 func tipoletra()->UIFont{
 	
 		var esquema = UIFont()
 		var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()

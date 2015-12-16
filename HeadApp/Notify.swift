@@ -25,6 +25,7 @@ class Notify {
 		let reminder = UILocalNotification()
 		reminder.fireDate = firedate
 		reminder.alertBody = mensaje
+		reminder.alertTitle = "Hey! " + nombreUsuario()
 		reminder.soundName = "sound.aif"
 	
 
@@ -33,6 +34,14 @@ class Notify {
 		
 
 		print(firedate!)
+	
+	}
+	
+	class func nombreUsuario() ->String{
+	
+	var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+		
+		if(ud.stringForKey("Nombre") == nil){ return " "}else{ return ud.stringForKey("Nombre")!}
 	
 	}
 

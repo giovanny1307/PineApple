@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Red"; ObjectID = "D1k-0b-jJW"; */
+"D1k-0b-jJW.text" = "Rojo";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "D8E-eD-oT5"; */
+"D8E-eD-oT5.text" = "Rosa";
+
+/* Class = "UITableViewSection"; footerTitle = "Set your favorite color and font"; ObjectID = "FcD-ZS-nwM"; */
+"FcD-ZS-nwM.footerTitle" = "Ajusta tu color de fondo favorito y tipo de letra";
+
+/* Class = "UITableViewSection"; headerTitle = "Color and Font"; ObjectID = "FcD-ZS-nwM"; */
+"FcD-ZS-nwM.headerTitle" = "Personaliza a HeadApp";
+
+/* Class = "UITableViewSection"; headerTitle = "Section-1"; ObjectID = "Hxe-9o-esX"; */
+"Hxe-9o-esX.headerTitle" = "Section-1";
+
+/* Class = "UILabel"; text = "Fuente"; ObjectID = "IqT-ac-8Qx"; */
+"IqT-ac-8Qx.text" = "Tipo de letra";
+
+/* Class = "UITableViewSection"; footerTitle = "Set your name"; ObjectID = "JGW-Oj-fnp"; */
+"JGW-Oj-fnp.footerTitle" = "Como quieres que HeadApp te llame";
+
+/* Class = "UITableViewSection"; headerTitle = "Your Name"; ObjectID = "JGW-Oj-fnp"; */
+"JGW-Oj-fnp.headerTitle" = "Nombre de usuario";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TKX-Qz-LD9"; */
+"TKX-Qz-LD9.text" = "Violeta";
+
+/* Class = "UILabel"; text = "PIÑE PILE"; ObjectID = "UNj-Z9-TJF"; */
+"UNj-Z9-TJF.text" = "HeadApp";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YHH-sf-TXx"; */
+"YHH-sf-TXx.text" = "Gris";
+
+/* Class = "UITextField"; text = "Coloca tu nombre"; ObjectID = "fPl-Xk-vl9"; */
+"fPl-Xk-vl9.text" = "Coloca tu nombre";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ifh-Pz-nMm"; */
+"ifh-Pz-nMm.text" = "Verde";
+
+/* Class = "UILabel"; text = "Color"; ObjectID = "jsw-5u-4FV"; */
+"jsw-5u-4FV.text" = "Color";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xgL-hi-Pnd"; */
+"xgL-hi-Pnd.text" = "Azul";
