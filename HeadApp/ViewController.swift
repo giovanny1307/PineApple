@@ -84,6 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 		self.tableViewPine.reloadData()
 		navigationController?.navigationBar.barTintColor = UIColor(red:0.18, green:0.33, blue:0.51, alpha:1.0)
+		navigationController?.navigationBar.tintColor = UIColor.whiteColor()
 		
 	}
 	
