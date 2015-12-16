@@ -10,39 +10,16 @@ import UIKit
 import CoreData
 import Foundation
 import QuartzCore
-
-
-
+import GoogleMobileAds
 
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,TableViewCellDelegate, UINavigationControllerDelegate,UITextViewDelegate {
 
 
 	@IBOutlet weak var tableViewPine: UITableView!
-	
 	@IBOutlet weak var alturaText: NSLayoutConstraint!
-	
-	
-	
-
-	@IBAction func Share(sender: UIButton) {
-		
-		let textToShare = "HeadApp is awesome!"
-		
-		
-			let objectsToShare = [textToShare]
-			let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-			
-			//New Excluded Activities Code
-			//activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
-			//
-			
-			self.presentViewController(activityVC, animated: true, completion: nil)
-		
-	}
-
+	@IBOutlet weak var banner: GADBannerView!
 	@IBOutlet weak var inputUsuario: UITextView!
-	
 	@IBOutlet weak var sendButton: UIButton!
 	@IBOutlet weak var hightInputLayout: NSLayoutConstraint!
 	
@@ -51,6 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		// Do any additional setup after loading the view, typically from a nib.
 		var app: UIApplication = UIApplication.sharedApplication()
 		
@@ -85,6 +63,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		self.tableViewPine.reloadData()
 		navigationController?.navigationBar.barTintColor = UIColor(red:0.18, green:0.33, blue:0.51, alpha:1.0)
 		navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+		
+		//Banner
+		
+		self.banner.adUnitID = "ca-app-pub-8311139956951620/8885327591"
+		//self.banner.adUnitID = "ca-app-pub-3940256099942544/2934735716" ca-app-pub-8311139956951620/8885327591
+		//Banner android "ca-app-pub-8311139956951620/5053270395"
+		
+		self.banner.rootViewController = self
+		var request: GADRequest = GADRequest()
+		self.banner.loadRequest(request)
 		
 	}
 	
@@ -187,7 +175,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		self.view.layoutIfNeeded()
 		UIView.animateWithDuration(0.5, animations: {
 			
-			self.hightInputLayout.constant = 44
+			self.hightInputLayout.constant = 100
 			self.alturaText.constant = 30
 	
 			
@@ -295,6 +283,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   tableViewPine.deleteRowsAtIndexPaths([indexPathForRow], withRowAnimation: .Fade)
   tableViewPine.endUpdates()
 		
+		
+	}
+	
+	
+	//MARK: Boton share
+	
+	@IBAction func Share(sender: UIButton) {
+		
+		let textToShare = "HeadApp is awesome!"
+		
+		
+		let objectsToShare = [textToShare]
+		let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+		
+		//New Excluded Activities Code
+		//activityVC.excludedActivityTypes = [UIActivityTypeAirDrop, UIActivityTypeAddToReadingList]
+		//
+		
+		self.presentViewController(activityVC, animated: true, completion: nil)
 		
 	}
 	
