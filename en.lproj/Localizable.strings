@@ -6,10 +6,4 @@
   Copyright © 2015 Giovanny Piñeros. All rights reserved.
 */
 
-HeadAppColor = "HeadApp Color"
-Blue = "Blue"
-Red = "Red"
-Green = "Green"
-Pink = "Pink"
-Violet = "Violet"
-Gray = "Gray"
+imageName = "ingl";

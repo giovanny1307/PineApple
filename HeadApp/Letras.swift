@@ -18,30 +18,30 @@ class Letras: UITableViewController {
 	
 	
 	
-	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
-		var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-		var tag: Int = tableView.cellForRowAtIndexPath(indexPath)!.tag
+		let ud: UserDefaults = UserDefaults.standard
+		let tag: Int = tableView.cellForRow(at: indexPath)!.tag
 		
 		ud.setValue(tag, forKey:"Letra")
 		
-		tableView.deselectRowAtIndexPath(indexPath, animated: true)
+		tableView.deselectRow(at: indexPath, animated: true)
 		
 		self.tableView.reloadData()
 		
 	}
 	
 	
-	override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-		var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		let ud: UserDefaults = UserDefaults.standard
 		
-		cell.accessoryType = UITableViewCellAccessoryType.None
+		cell.accessoryType = UITableViewCellAccessoryType.none
 		
-		if(ud.integerForKey("Letra") == cell.tag ){
+		if(ud.integer(forKey: "Letra") == cell.tag ){
 			
 			
-			print(ud.integerForKey("Letra"))
-			cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+			print(ud.integer(forKey: "Letra"))
+			cell.accessoryType = UITableViewCellAccessoryType.checkmark
 			
 		}
 	}

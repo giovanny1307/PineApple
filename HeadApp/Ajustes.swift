@@ -21,29 +21,22 @@ class Ajustes: UITableViewController,UITextFieldDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.Name.delegate  = self
-		var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+		let ud: UserDefaults = UserDefaults.standard
 		
-		if(ud.stringForKey("Nombre") == nil){return}else{
-			self.Name.placeholder = ud.stringForKey("Nombre")!}
+		if(ud.string(forKey: "Nombre") == nil){return}else{
+			self.Name.placeholder = ud.string(forKey: "Nombre")!}
 	}
 	
-	override func viewDidAppear(animated: Bool) {
+	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-		
-		var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-		
-		
-		if(ud.stringForKey("Nombre") == nil){return}else{
-			self.Name.placeholder = ud.stringForKey("Nombre")!}
-		
-		
+		let ud: UserDefaults = UserDefaults.standard
+		if(ud.string(forKey: "Nombre") == nil){return}else{
+			self.Name.placeholder = ud.string(forKey: "Nombre")!}
 	}
-	
-
 	
 	//MARK: input
 	
-	func textFieldShouldReturn(textField: UITextField) -> Bool {
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		Name.resignFirstResponder()
 		accion()
 		
@@ -52,15 +45,15 @@ class Ajustes: UITableViewController,UITextFieldDelegate {
 	
 	func accion(){
 		
-		var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-		var nombre = Name.text!
+		let ud: UserDefaults = UserDefaults.standard
+		let nombre = Name.text!
 		
 		
 		ud.setValue(nombre, forKey: "Nombre")
 		
 		
 		
-		Name.placeholder = ud.stringForKey("Nombre")!
+		Name.placeholder = ud.string(forKey: "Nombre")!
 		
 		print("EL NOMBRE ES:\(Name.placeholder!)!!!!!!!!!!!!!!!!!!!!!")
 		
@@ -68,9 +61,9 @@ class Ajustes: UITableViewController,UITextFieldDelegate {
 		
 	}
 	
-	override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+	override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
 		
-		tv.deselectRowAtIndexPath(indexPath, animated: true)
+		tv.deselectRow(at: indexPath, animated: true)
 		
 	}
 	

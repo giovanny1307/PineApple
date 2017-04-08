@@ -27,10 +27,23 @@
 		2C3660821C210A96004D6375 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3660811C210A96004D6375 /* StoreKit.framework */; };
 		2C3660841C210AA2004D6375 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3660831C210AA2004D6375 /* SystemConfiguration.framework */; };
 		2C6AFC491C1A348A008DCBBE /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AFC481C1A348A008DCBBE /* Notify.swift */; };
+		2C9685D01C235AB300BB4620 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9685D21C235AB300BB4620 /* A.png */; };
+		2C9685D61C235B1500BB4620 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9685D81C235B1500BB4620 /* B.png */; };
+		2C9685DC1C235B5A00BB4620 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9685DE1C235B5A00BB4620 /* C.png */; };
 		2CA22CF71C127ACF006552B8 /* ModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CA22CF51C127ACF006552B8 /* ModelData.xcdatamodeld */; };
+		2CA59E7C1C2336330013EF39 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CA59E7E1C2336330013EF39 /* Localizable.strings */; };
 		2CBD53251C1E5E9F0032C0BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBD53271C1E5E9F0032C0BC /* Main.storyboard */; };
 		2CBD533B1C1E76830032C0BC /* Letras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD533A1C1E76830032C0BC /* Letras.swift */; };
 		2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */; };
+		2CD3E07E1C22173A00D89557 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CD3E0781C22173A00D89557 /* FacebookSDKStrings.bundle */; };
+		2CD3E07F1C22173A00D89557 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3E0791C22173A00D89557 /* FBAudienceNetwork.framework */; };
+		2CD3E0801C22173A00D89557 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3E07A1C22173A00D89557 /* FBSDKCoreKit.framework */; };
+		2CD3E0811C22173A00D89557 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3E07B1C22173A00D89557 /* FBSDKLoginKit.framework */; };
+		2CD3E0821C22173A00D89557 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3E07C1C22173A00D89557 /* FBSDKMessengerShareKit.framework */; };
+		2CD3E0831C22173A00D89557 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3E07D1C22173A00D89557 /* FBSDKShareKit.framework */; };
+		2CD3E0851C22175100D89557 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3E0841C22175100D89557 /* Bolts.framework */; };
+		2CD3E08C1C22542800D89557 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3E08A1C22542800D89557 /* BWWalkthroughPageViewController.swift */; };
+		2CD3E08D1C22542800D89557 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD3E08B1C22542800D89557 /* BWWalkthroughViewController.swift */; };
 		2CE5BE431C1F64CB00CDE74C /* Ajustes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5BE421C1F64CB00CDE74C /* Ajustes.swift */; };
 		2CE5BE451C1F65A200CDE74C /* Colores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE5BE441C1F65A200CDE74C /* Colores.swift */; };
 		2CFEDCA11C0E68ED00CAB35C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */; };
@@ -80,10 +93,27 @@
 		2C6AFC481C1A348A008DCBBE /* Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
 		2C7642521C20C608000BF5FC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		2C7642541C20C61A000BF5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2C9685D11C235AB300BB4620 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/A.png; sourceTree = "<group>"; };
+		2C9685D31C235AB500BB4620 /* es */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = es; path = es.lproj/A.png; sourceTree = "<group>"; };
+		2C9685D71C235B1500BB4620 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/B.png; sourceTree = "<group>"; };
+		2C9685D91C235B1700BB4620 /* es */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = es; path = es.lproj/B.png; sourceTree = "<group>"; };
+		2C9685DD1C235B5A00BB4620 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/C.png; sourceTree = "<group>"; };
+		2C9685DF1C235B5E00BB4620 /* es */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = es; path = es.lproj/C.png; sourceTree = "<group>"; };
 		2CA22CF61C127ACF006552B8 /* ModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelData.xcdatamodel; sourceTree = "<group>"; };
+		2CA59E801C23363B0013EF39 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CA59E811C2340B90013EF39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2CBD53281C1E5EB50032C0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CBD533A1C1E76830032C0BC /* Letras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letras.swift; sourceTree = "<group>"; };
 		2CCCDB131C1146CD00EAEC71 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2CD3E0781C22173A00D89557 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		2CD3E0791C22173A00D89557 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		2CD3E07A1C22173A00D89557 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2CD3E07B1C22173A00D89557 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2CD3E07C1C22173A00D89557 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		2CD3E07D1C22173A00D89557 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2CD3E0841C22175100D89557 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2CD3E08A1C22542800D89557 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = ../BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		2CD3E08B1C22542800D89557 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = ../BWWalkthroughViewController.swift; sourceTree = "<group>"; };
 		2CE5BE421C1F64CB00CDE74C /* Ajustes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ajustes.swift; sourceTree = "<group>"; };
 		2CE5BE441C1F65A200CDE74C /* Colores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colores.swift; sourceTree = "<group>"; };
 		2CFEDC9D1C0E68ED00CAB35C /* HeadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,17 +135,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C3660841C210AA2004D6375 /* SystemConfiguration.framework in Frameworks */,
+				2CD3E0851C22175100D89557 /* Bolts.framework in Frameworks */,
 				2C3660821C210A96004D6375 /* StoreKit.framework in Frameworks */,
 				2C3660801C210A90004D6375 /* MessageUI.framework in Frameworks */,
 				2C36607D1C210A85004D6375 /* EventKit.framework in Frameworks */,
+				2CD3E0821C22173A00D89557 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				2C36607E1C210A85004D6375 /* EventKitUI.framework in Frameworks */,
+				2CD3E07F1C22173A00D89557 /* FBAudienceNetwork.framework in Frameworks */,
 				2C36607A1C210A69004D6375 /* CoreTelephony.framework in Frameworks */,
 				2C3660781C210A63004D6375 /* CoreMedia.framework in Frameworks */,
 				2C3660761C210A56004D6375 /* CoreGraphics.framework in Frameworks */,
 				2C3660741C210A42004D6375 /* CoreFoundation.framework in Frameworks */,
+				2CD3E0801C22173A00D89557 /* FBSDKCoreKit.framework in Frameworks */,
 				2C3660721C210A38004D6375 /* AVFoundation.framework in Frameworks */,
 				2C3660701C210A2F004D6375 /* AudioToolbox.framework in Frameworks */,
+				2CD3E0831C22173A00D89557 /* FBSDKShareKit.framework in Frameworks */,
 				2C36606E1C210A27004D6375 /* AdSupport.framework in Frameworks */,
+				2CD3E0811C22173A00D89557 /* FBSDKLoginKit.framework in Frameworks */,
 				2C36606C1C210947004D6375 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +173,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA59E841C23416A0013EF39 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2C9685DE1C235B5A00BB4620 /* C.png */,
+				2C9685D81C235B1500BB4620 /* B.png */,
+				2C9685D21C235AB300BB4620 /* A.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		2CFEDC941C0E68ED00CAB35C = {
 			isa = PBXGroup;
 			children = (
+				2CD3E0841C22175100D89557 /* Bolts.framework */,
+				2CD3E0781C22173A00D89557 /* FacebookSDKStrings.bundle */,
+				2CD3E0791C22173A00D89557 /* FBAudienceNetwork.framework */,
+				2CD3E07A1C22173A00D89557 /* FBSDKCoreKit.framework */,
+				2CD3E07B1C22173A00D89557 /* FBSDKLoginKit.framework */,
+				2CD3E07C1C22173A00D89557 /* FBSDKMessengerShareKit.framework */,
+				2CD3E07D1C22173A00D89557 /* FBSDKShareKit.framework */,
 				2C3660831C210AA2004D6375 /* SystemConfiguration.framework */,
 				2C3660811C210A96004D6375 /* StoreKit.framework */,
 				2C36607F1C210A90004D6375 /* MessageUI.framework */,
@@ -173,6 +226,10 @@
 		2CFEDC9F1C0E68ED00CAB35C /* HeadApp */ = {
 			isa = PBXGroup;
 			children = (
+				2CA59E841C23416A0013EF39 /* Images */,
+				2CA59E7E1C2336330013EF39 /* Localizable.strings */,
+				2CD3E08A1C22542800D89557 /* BWWalkthroughPageViewController.swift */,
+				2CD3E08B1C22542800D89557 /* BWWalkthroughViewController.swift */,
 				2CFEDCA01C0E68ED00CAB35C /* AppDelegate.swift */,
 				2CA22CF51C127ACF006552B8 /* ModelData.xcdatamodeld */,
 				2CFEDCA21C0E68ED00CAB35C /* ViewController.swift */,
@@ -283,13 +340,17 @@
 				TargetAttributes = {
 					2CFEDC9C1C0E68ED00CAB35C = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = B84K58SAFY;
+						LastSwiftMigration = 0820;
 					};
 					2CFEDCB01C0E68ED00CAB35C = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 2CFEDC9C1C0E68ED00CAB35C;
 					};
 					2CFEDCBB1C0E68ED00CAB35C = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 2CFEDC9C1C0E68ED00CAB35C;
 					};
 				};
@@ -301,6 +362,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 2CFEDC941C0E68ED00CAB35C;
 			productRefGroup = 2CFEDC9E1C0E68ED00CAB35C /* Products */;
@@ -324,8 +386,13 @@
 				2C3660051C20D568004D6375 /* Lobster_1.3.otf in Resources */,
 				2C365FFF1C20D52B004D6375 /* Capture_it.ttf in Resources */,
 				2C365FFD1C20D519004D6375 /* BEBAS___.ttf in Resources */,
+				2CA59E7C1C2336330013EF39 /* Localizable.strings in Resources */,
+				2C9685DC1C235B5A00BB4620 /* C.png in Resources */,
+				2C9685D61C235B1500BB4620 /* B.png in Resources */,
 				2CFEDCA81C0E68ED00CAB35C /* Assets.xcassets in Resources */,
+				2CD3E07E1C22173A00D89557 /* FacebookSDKStrings.bundle in Resources */,
 				2C3660011C20D54E004D6375 /* Starjedi.ttf in Resources */,
+				2C9685D01C235AB300BB4620 /* A.png in Resources */,
 				2C3660031C20D55C004D6375 /* underwood_champion.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD3E08C1C22542800D89557 /* BWWalkthroughPageViewController.swift in Sources */,
 				2CA22CF71C127ACF006552B8 /* ModelData.xcdatamodeld in Sources */,
+				2CD3E08D1C22542800D89557 /* BWWalkthroughViewController.swift in Sources */,
 				2CE5BE451C1F65A200CDE74C /* Colores.swift in Sources */,
 				2CBD533B1C1E76830032C0BC /* Letras.swift in Sources */,
 				2CCCDB141C1146CD00EAEC71 /* TableViewCell.swift in Sources */,
@@ -394,6 +463,43 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2C9685D21C235AB300BB4620 /* A.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C9685D11C235AB300BB4620 /* en */,
+				2C9685D31C235AB500BB4620 /* es */,
+			);
+			name = A.png;
+			sourceTree = "<group>";
+		};
+		2C9685D81C235B1500BB4620 /* B.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C9685D71C235B1500BB4620 /* en */,
+				2C9685D91C235B1700BB4620 /* es */,
+			);
+			name = B.png;
+			sourceTree = "<group>";
+		};
+		2C9685DE1C235B5A00BB4620 /* C.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C9685DD1C235B5A00BB4620 /* en */,
+				2C9685DF1C235B5E00BB4620 /* es */,
+			);
+			name = C.png;
+			sourceTree = "<group>";
+		};
+		2CA59E7E1C2336330013EF39 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CA59E801C23363B0013EF39 /* es */,
+				2CA59E811C2340B90013EF39 /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		2CBD53271C1E5E9F0032C0BC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,8 +611,9 @@
 				INFOPLIST_FILE = HeadApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadAppa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -524,8 +631,9 @@
 				INFOPLIST_FILE = HeadApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadAppa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -537,6 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadApp.app/HeadApp";
 			};
 			name = Debug;
@@ -549,6 +658,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeadApp.app/HeadApp";
 			};
 			name = Release;
@@ -560,6 +670,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = HeadApp;
 				USES_XCTRUNNER = YES;
 			};
@@ -572,6 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.goblent.HeadAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = HeadApp;
 				USES_XCTRUNNER = YES;
 			};

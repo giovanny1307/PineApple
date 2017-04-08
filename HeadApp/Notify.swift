@@ -12,15 +12,15 @@ import UIKit
 
 class Notify {
 	
-	class func pine(mensaje: String, contador: Int){
+	class func pine(_ mensaje: String, contador: Int){
 		//let now: NSDateComponents = NSCalendar.currentCalendar().components([.Day], fromDate: NSDate())
 		
 		
 		
-		var components = NSDateComponents()
-		components.setValue(contador,forComponent: NSCalendarUnit.Day)
-		var date : NSDate = NSDate()
-		var firedate = NSCalendar.currentCalendar().dateByAddingComponents(components, toDate: date, options: NSCalendarOptions(rawValue: 0))
+		let components = DateComponents()
+		(components as NSDateComponents).setValue(contador,forComponent: NSCalendar.Unit.day)
+		let date : Date = Date()
+		let firedate = (Calendar.current as NSCalendar).date(byAdding: components, to: date, options: NSCalendar.Options(rawValue: 0))
 		
 		let reminder = UILocalNotification()
 		reminder.fireDate = firedate
@@ -29,7 +29,7 @@ class Notify {
 		reminder.soundName = "sound.aif"
 	
 
-		UIApplication.sharedApplication().scheduleLocalNotification(reminder)
+		UIApplication.shared.scheduleLocalNotification(reminder)
 		
 		
 
@@ -39,9 +39,9 @@ class Notify {
 	
 	class func nombreUsuario() ->String{
 	
-	var ud: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+	let ud: UserDefaults = UserDefaults.standard
 		
-		if(ud.stringForKey("Nombre") == nil){ return " "}else{ return ud.stringForKey("Nombre")!}
+		if(ud.string(forKey: "Nombre") == nil){ return " "}else{ return ud.string(forKey: "Nombre")!}
 	
 	}
 
